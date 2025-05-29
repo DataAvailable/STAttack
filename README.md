@@ -1,6 +1,6 @@
 In this paper, we measure and interpret the impacts of code synonym transformation on the performance of deep vulnerability detection models, thereby providing guidance for optimizing the vulnerability detection capabilities. Our work mainly contains three parts: 1) We generalize eight synonymous transformation rules for constructing code synonymous adversarial examples, which have higher complexity and diversity with semantic preservation relative to the adversarial examples generated in previous work, to better measure the robustness of vulnerability detection models. Experiments on publicly available datasets show that these vulnerability detection models drop 15.67%-83.84% and 9.95%-86.26% in Recall and F1 values, respectively. 2) We explain the impact of code synonymous adversarial examples on the performance of vulnerability detection models in terms of two phases: code representations (input) and feature extraction (model). 3) We adopt synonym adversarial training to enhance the robustness of vulnerability detection and improve detection performance, achieving maximum improvements of 86.23% and 19.77% respectively compared to the original model.
 
-<img src="https://github.com/DataAvailable/STAttack/blob/main/Figures/Figure1.png?raw=true" alt="" width="50%" height="50%">
+![](https://github.com/DataAvailable/STAttack/blob/main/Figures/Figure1.png?raw=true){:height="50%" width="50%"}
 
 ## Requirements
 ```
