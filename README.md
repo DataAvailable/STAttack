@@ -20,16 +20,19 @@ urllib3=2.2.3
 ```
 ## Datasets
 [1] Big-Vul: https://github.com/ZeoVan/MSR_20_Code_vulnerability_CSV_Dataset/blob/master/all_c_cpp_release2.0.csv
+
 [2] FFmpeg+Qemu(or Devign): https://drive.google.com/file/d/1x6hoF7G-tSYxg8AFybggypLZgMGDNHfF/edit
 
 ## Target Models
 [1] LineVul: https://github.com/awsm-research/LineVul
+
 [2] Devign: https://github.com/epicosy/devign
+
 [3] ReGVD: https://github.com/daiquocnguyen/GNN-ReGVD
 
 ## How to Reproduce？
 
-### 1 For LineVul Model
+### 1 Attacking LineVul Model
 1.1 Download the dataset.
 ```
 cd LineVul/data
@@ -75,12 +78,12 @@ python linevul_STAttack.py \
     --test_data_file=../data/big-vul_dataset/test.csv \
     --block_size 512 \
     --eval_batch_size 512
-	--transformation_rules R1
-	--filter_error yes
+    --transformation_rules R1
+    --filter_error yes
 ```
 The value of the parameter `transformation_rules` is `R1-R8`.
 
-### 2 For ReGVD Model
+### 2 Attacking ReGVD Model
 2.1 Preprocess the dataset.
 ```
 cd ReGVD/dataset
@@ -140,3 +143,11 @@ python run_STAttack.py
 	--filter_error yes
 	--seed 123456 2>&1 | tee test.log
 ```
+
+
+
+
+
+
+
+
