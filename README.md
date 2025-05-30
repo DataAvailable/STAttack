@@ -32,7 +32,7 @@ urllib3=2.2.3
 
 ## How to Reproduce？
 
-### 1 Attacking LineVul Model
+------------------------------------------------------------
 1.1 Download the dataset.
 ```
 cd LineVul/data
@@ -83,7 +83,7 @@ python linevul_STAttack.py \
 ```
 The value of the parameter `transformation_rules` is `R1-R8`.
 
-### 2 Attacking ReGVD Model
+------------------------------------------------------------
 2.1 Preprocess the dataset.
 ```
 cd ReGVD/dataset
